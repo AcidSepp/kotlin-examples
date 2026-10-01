@@ -10,13 +10,16 @@ fun maxOf1(a: Int, b: Int): Int {
 }
 // snippet: /ifStatement
 
+// @formatter:off
 // snippet: ifExpression
-fun maxOf2(a: Int, b: Int) = if (a > b) {
-  a
-} else {
-  b
-}
+fun maxOf2(a: Int, b: Int) =
+  if (a > b) {
+    a
+  } else {
+    b
+  }
 // snippet: /ifExpression
+// @formatter:on
 
 fun main() {
   println(maxOf1(3, 7))
