@@ -27,3 +27,18 @@ fun printSum3(a: Int, b: Int = 1) {
 // snippet: fun5
 fun mul(a: Int, b: Int) = a * b
 // snippet: /fun5
+
+fun main() {
+  // snippet: functionCall0
+  fun sum2(a: Int, b: Int = 1) = a + b;
+  val c = sum2(3, 5)
+  // snippet: /functionCall0
+
+  // snippet: functionCall1
+  val d = sum2(b = 3, a = 5)
+  // snippet: /functionCall1
+
+  // snippet: functionCall2
+  val f = sum2(3)
+  // snippet: /functionCall2
+}
