@@ -1,12 +1,19 @@
 plugins {
-    kotlin("jvm") version "2.3.10"
-    application
+  alias(libs.plugins.kotlin)
+  application
 }
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 application {
-    mainClass = "HelloWorldKt"
+  mainClass = "HelloWorldKt"
+}
+
+// Apply a specific Java toolchain to ease working on different environments.
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(25)
+  }
 }
